@@ -1,0 +1,28 @@
+*{
+  margin: 10px 10px;
+  padding: 10px 10px;
+  background-color: lightgray;
+}
+h1 {
+  color: darkblue;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 5px 0px 5px lightgreen;
+  font-size: 75px;
+}
+h2 {
+  color: black;
+  text-shadow: 10px 0px 5px rgb(232, 232, 186);
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  
+}
+h3 {
+  margin: 10px;
+  padding: 0px 10px;
+}
+h3:hover {
+  margin: 10px;
+  padding: 5px 10px;
+  color: darkblue;
+}

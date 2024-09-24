@@ -1,0 +1,1 @@
+Add navigation for all routes using buttons and useRouter.
