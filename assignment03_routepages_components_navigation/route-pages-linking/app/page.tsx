@@ -6,7 +6,7 @@ import Footer from "./footer/page";
 
 export default function Home() {
   return (
-    <>
+    <div>
     <h1 >This is Home page</h1><br />
 
     <h2>Go to Navbar page, Click on below link</h2>
@@ -21,6 +21,6 @@ export default function Home() {
     <h2>Go to Footer page, Click on below link</h2>
     <Link href={'/footer'}><h3>Footer page</h3></Link>
     
-    </>
+    </div>
   );
 }
