@@ -3,7 +3,7 @@ import React from 'react'
 import {NotificationContainer, NotificationManager} from 'react-notifications'
 import { Button } from '@/components/ui/button'
 import { TbSend2 } from "react-icons/tb";
-import Contact from '../Contact/page';
+
 
 export default function Notification() {
   let showNotification = () => {

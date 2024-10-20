@@ -7,7 +7,6 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoLogoFacebook } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { text } from "stream/consumers";
 import { Button } from "@/components/ui/button";
 import { MdDownload } from "react-icons/md";
 

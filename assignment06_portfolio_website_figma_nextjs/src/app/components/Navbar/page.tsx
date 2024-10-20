@@ -1,7 +1,6 @@
 'use client'
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { NextFont } from 'next/dist/compiled/@next/font'
 import { FaTimes } from 'react-icons/fa'
 import { CiMenuFries } from "react-icons/ci";
 
