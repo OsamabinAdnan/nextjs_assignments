@@ -11,9 +11,7 @@ export default function Contact() {
     const [uMessage, setuMessage] = useState('')
     
 
-    const handleSubmit = (event)=> {
-        event.preventDefault()
-    }
+
 
   return (
     <>
@@ -21,7 +19,7 @@ export default function Contact() {
             <div className=" sm:p-[100px] p-[30px] bg-[#191b22] max-w-full h-auto  justify-center items-center lg:flex-row flex-col lg:gap-[40px] gap-[50px] lg:text-ellipsis">
                 <h1 className='text-white text-[48px] font-extrabold font-inter text-center mb-20 mt-10px'>Contact <span className='text-[#01eeff]'>Me!</span></h1>
                 <div className=''>
-                    <form action="" onSubmit={handleSubmit}>
+                    <form action="">
                         <div className='flex gap-10 justify-center lg:flex-row flex-col mb-[2.5rem] items-center'>
                             <div className=''>
                                 <label htmlFor=""></label>
