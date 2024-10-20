@@ -27,13 +27,13 @@ export default function HeroSection() {
       <div className="flex sm:p-[100px] p-[30px] bg-[#191b22] max-w-full h-auto  justify-center items-center lg:flex-row flex-col lg:gap-[40px] gap-[50px] lg:text-ellipsis">
             {/* Left Section */}
             <div className="flex flex-col basis-[50%] w-full">
-                <h3 className="text-white lg:text-3xl md:text-2xl sm:text-2xl text:2xl font-Inter font-semibold py-2">Hello, it's Me</h3>
+                <h3 className="text-white lg:text-3xl md:text-2xl sm:text-2xl text:2xl font-Inter font-semibold py-2">Hello, it&apos;s Me</h3>
                 <h1 className="text-white lg:text-6xl md:text-4xl sm:text-4xl text:3xl font-inter font-bold pb-2">Osama bin Adnan</h1>
-                <span className="text-white lg:text-3xl md:text-2xl sm:text-2xl text:2xl font-Inter font-semibold pb-5">And I'm a 
+                <span className="text-white lg:text-3xl md:text-2xl sm:text-2xl text:2xl font-Inter font-semibold pb-5">And I&apos;m a 
                 <span className="gap-1 text-[#01eeff] font-bold drop-shadow-light sm:text-2xl md:text-2xl lg:text-3xl ">{text}<Cursor/></span>
                 </span>
                
-                <p className="text-white text-left font-light font-inter lg:text-[25px] md:text[20px] sm:text[15px]"> I'm a passionate Frontend Developer, UI/UX Designer, and Digital Marketer with a keen eye for detail and user-centric design. I
+                <p className="text-white text-left font-light font-inter lg:text-[25px] md:text[20px] sm:text[15px]"> I&apos;m a passionate Frontend Developer, UI/UX Designer, and Digital Marketer with a keen eye for detail and user-centric design. I
                     specialize in creating visually appealing, responsive web interfaces
                     while ensuring seamless user experiences and driving engagement
                     through targeted digital marketing strategies.

@@ -10,15 +10,13 @@ export default function Notification() {
     
     NotificationManager.success ('Submitted')
   }
-  let ErrorNotification = () => {
-    NotificationManager.error ('Error')
-  }
+
   return (
     <div>
       
       <NotificationContainer/>
       
-      <Button type='submit' onClick={ErrorNotification} className="bg-[#01eeff]  drop-shadow-light hover:drop-shadow-heavy hover:bg-[#01eeff] hover:text-[#151925] font-inter font-bold rounded-[20px]">
+      <Button type='submit' onClick={showNotification} className="bg-[#01eeff]  drop-shadow-light hover:drop-shadow-heavy hover:bg-[#01eeff] hover:text-[#151925] font-inter font-bold rounded-[20px]">
       <TbSend2 /> Submit
       </Button>
 

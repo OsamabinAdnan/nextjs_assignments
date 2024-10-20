@@ -19,7 +19,7 @@ export default function Services() {
                     <div className='flex flex-col bg-[#323846] justify-center items-center px-8 py-10 w-[500px] h-[430] rounded-xl border-4 border-transparent hover:border-4 hover:border-solid hover:border-[#01eeff] hover:transition hover:ease-out'>
                         <HiPaintBrush size={50} className='text-[#01eeff] drop-shadow-light'/>
                         <h1 className='text-white font-bold text-[35px] mt-1 mb-4 text-center'>UI UX Designer</h1>
-                        <p className='text-white text-center mb-5'>Crafting seamless, user-centered designs that transform ideas into intuitive digital experiences. Let's design solutions that captivate and convert your audience</p>
+                        <p className='text-white text-center mb-5'>Crafting seamless, user-centered designs that transform ideas into intuitive digital experiences. Let&apos;s design solutions that captivate and convert your audience</p>
                         <div>
                             <Button className="bg-[#01eeff] drop-shadow-light hover:drop-shadow-heavy hover:bg-[#01eeff] hover:text-[#151925] font-inter font-bold rounded-[20px]"><a href="#" target='_blank'>Read More </a>
                             </Button>
@@ -37,7 +37,7 @@ export default function Services() {
                     <div className='flex flex-col bg-[#323846] justify-center items-center px-8 py-10 border-solid border-[#01eeff] w-[500px] h-[430] rounded-xl border-4 border-transparent hover:border-4 hover:border-solid hover:border-[#01eeff] hover:transition hover:ease-out'>
                         <ImEarth size={50} className='text-[#01eeff] drop-shadow-light'/>
                         <h1 className='text-white font-bold text-[35px] mt-1 mb-4 text-center'>Digital Marketing</h1>
-                        <p className='text-white text-center mb-5'>Elevating your brand with targeted digital strategies that drive traffic, boost engagement, and deliver measurable results. Let's grow your online presence together</p>
+                        <p className='text-white text-center mb-5'>Elevating your brand with targeted digital strategies that drive traffic, boost engagement, and deliver measurable results. Let&apos;s grow your online presence together</p>
                         <div>
                             <Button className="bg-[#01eeff] drop-shadow-light hover:drop-shadow-heavy hover:bg-[#01eeff] hover:text-[#151925] font-inter font-bold rounded-[20px]"><a href="#" target='_blank'>Read More </a>
                             </Button>

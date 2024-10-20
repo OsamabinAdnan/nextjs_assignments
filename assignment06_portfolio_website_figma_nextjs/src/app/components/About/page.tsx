@@ -18,7 +18,7 @@ export default function About() {
             <div className='basis-[50%]'>
                 <h1 className='text-white text-[48px] font-extrabold font-inter'>About <span className='text-[#01eeff]'>Me</span></h1>
                 <h4 className='text-white text-[28px] font-semibold font-inter pb-10'>Digital Marketer | Frontend Developer | UI UX Designer</h4>
-                <p className='text-white text-left font-light font-inter lg:text-[25px] md:text[20px] sm:text[15px] pb-10'>With a degree in Textile Engineering, an MBA in Marketing, and certification in Digital Marketing, I create impactful online strategies that drive growth. Now diving into Cloud Applied Generative Engineering, I'm blending marketing expertise with tech innovation to deliver results. Let's work together to elevate your brand and accelerate your business success.</p>
+                <p className='text-white text-left font-light font-inter lg:text-[25px] md:text[20px] sm:text[15px] pb-10'>With a degree in Textile Engineering, an MBA in Marketing, and certification in Digital Marketing, I create impactful online strategies that drive growth. Now diving into Cloud Applied Generative Engineering, I&apos;m blending marketing expertise with tech innovation to deliver results. Let&apos;s work together to elevate your brand and accelerate your business success.</p>
                 <div className='flex justify-center lg:justify-normal'>
                     {/* Button */}
                     <Button className="bg-[#01eeff] drop-shadow-light hover:drop-shadow-heavy hover:bg-[#01eeff] hover:text-[#151925] font-inter font-bold rounded-[20px] "><IoIosMore /><a href="./OsamabinAdnanCV.pdf" target='_blank'>See More </a>

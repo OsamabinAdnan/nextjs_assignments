@@ -4,14 +4,14 @@ import Notification from '../ButtonNotification/page';
 import React, { useState } from 'react'
 
 export default function Contact() {
-    let [fName,setfName] = useState('')
-    let [lName,setlName] = useState('')
-    let [uEmail, setuEmail] = useState('')
-    let [uPhone, setuPhone] = useState('')
-    let [uMessage, setuMessage] = useState('')
+    const [fName,setfName] = useState('')
+    const [lName,setlName] = useState('')
+    const [uEmail, setuEmail] = useState('')
+    const [uPhone, setuPhone] = useState('')
+    const [uMessage, setuMessage] = useState('')
     
 
-    let handleSubmit = (event:any)=> {
+    const handleSubmit = (event)=> {
         event.preventDefault()
     }
 
