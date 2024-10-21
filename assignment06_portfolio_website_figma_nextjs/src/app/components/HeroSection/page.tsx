@@ -18,7 +18,7 @@ export default function HeroSection() {
       " Digital Marketer!",
       " WordPress Developer!",
     ],
-    loop: 10,
+    loop: 100,
     onLoopDone: () => console.log(`loop completed after 5000 runs.`),
   });
 
