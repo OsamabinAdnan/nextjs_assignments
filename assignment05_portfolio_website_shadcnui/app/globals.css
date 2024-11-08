@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hoverMenu {
+  position: relative;
+}
+.hoverMenu::before{
+  content: '';
+  display: block;
+  position:absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: #4ee247;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+  transform-origin: left;
+  border-radius: 10px;
+}
+.hoverMenu:hover::before{
+  transform: scaleX(1);
+  transform-origin: right;
+  color: black;
+}
+
+/* Progress bar */
+.wrapper {
+  border: 3px solid #4ee247;
+  border-radius: 15px;
+}
+
+.container {
+  background-color: #4ee247;
+  border-radius: 10px;
+}
+
+.barCompleted1 {
+  background-color: black;
+  width: 90%;
+  border-radius: 10px;
+}
+.barCompleted2 {
+  background-color: black;
+  width: 85%;
+  border-radius: 10px;
+}
+.barCompleted3 {
+  background-color: black;
+  width: 82%;
+  border-radius: 10px;
+}
+.barCompleted4 {
+  background-color: black;
+  width: 88%;
+  border-radius: 10px;
+}
+.barCompleted5 {
+  background-color: black;
+  width: 93%;
+  border-radius: 10px;
+}
+.barCompleted5 {
+  background-color: black;
+  width: 80%;
+  border-radius: 10px;
+}
+.barCompleted6 {
+  background-color: black;
+  width: 75%;
+  border-radius: 10px;
+}
+.label {
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Card  Overlay*/
+
+.perspective {
+  perspective: 1000px;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.bgImage{
+  background-image: url(../public/wave2.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  height: 70vh;
+  width: 100%;
+  
+}
