@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { inter } from '../app/ui/font';
 import {montserrat} from '../app/ui/font';
-import {Toaster, toast} from 'sonner'
+import {Toaster} from 'sonner'
 
 
 
