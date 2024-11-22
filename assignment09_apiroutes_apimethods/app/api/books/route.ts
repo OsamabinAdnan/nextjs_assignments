@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { NextRequest } from "next/server";
 
 
 // Data of API
@@ -134,9 +135,9 @@ export async function GET(){
 
 // POST method
 
-export async function POST (req:Request){
+export async function POST(request:NextRequest){
     try {
-        const newBook = await req.json();
+        const newBook = await request.json();
         books.push({...newBook, id:books.length+1})
         return NextResponse.json({message:"Book added successfully!"},{status:200})
     }
@@ -146,10 +147,10 @@ export async function POST (req:Request){
 }
 
 // PUT method
-export async function PUT (req:Request) {
+export async function PUT(request:NextRequest) {
     try{
-        const updateBook:Books = await req.json();
-        books = books.map((book)=>
+        const updateBook:Books = await request.json();
+        books.map((book)=>
             book.id === updateBook.id ? { ...book, ...updateBook}:book
         );
         return NextResponse.json({message: 'Book updated successfully!'}, {status:200})
@@ -160,7 +161,7 @@ export async function PUT (req:Request) {
 }
 
 // DELETE method
-export async function DELETE(req:Request){
+export async function DELETE(req:NextRequest){
     try {
         const id = await req.json()
         books = books.filter((book)=> book.id !== id);
