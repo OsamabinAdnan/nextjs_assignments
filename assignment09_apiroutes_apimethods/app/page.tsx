@@ -1,6 +1,6 @@
 import React from 'react'
 import BookCard from './components/book-card';
-import { Books } from "@/data";
+import { Books } from './api/books/route';
 import AddBookForm from './components/AddBookForm';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';

@@ -20,7 +20,7 @@ export default function BookCard ({id,author,title,image, available}:Books){
     // Handle put method
     const handleUpdate = async () => {
         const updateBook = {id, title:newTitle, author:newAuthor, available:newAvailable, image}
-        const response = await fetch ('../api/books', {
+        const response = await fetch ('/api/books', {
             method: 'PUT',
             headers: {'Content-Type':'application/json'},
             body: JSON.stringify(updateBook)
@@ -35,7 +35,7 @@ export default function BookCard ({id,author,title,image, available}:Books){
     };
     // Handle delete method
     const handleDelete = async () => {
-        const response = await fetch ('../api/books', {
+        const response = await fetch ('/api/books', {
             method: 'DELETE',
             headers:{'Content-Type': 'application/json'},
             body:JSON.stringify(id),
