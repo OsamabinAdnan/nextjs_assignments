@@ -8,7 +8,7 @@ export interface Books {
     available:boolean
   }
   
-  export const books:Books [] = [
+  const books:Books [] = [
     {
         id:1,
         title:"Designing Data-Intensive Applications",
@@ -119,3 +119,5 @@ export interface Books {
       available: true
     }
   ];
+
+  export default books

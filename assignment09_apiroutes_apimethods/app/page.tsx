@@ -1,13 +1,13 @@
 import React from 'react'
 import BookCard from './components/book-card';
-import { Books } from './api/books/route';
 import AddBookForm from './components/AddBookForm';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import { Books } from '@/data';
 
 export default async function Home() {
 
-  const res = await fetch ("http://localhost:3000/api/books")
+  const res = await fetch ("/api/books")
   const books:Books[] = await res.json();
   console.log(books);
   

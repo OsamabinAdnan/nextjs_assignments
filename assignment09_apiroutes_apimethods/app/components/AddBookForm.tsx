@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation';
 
 
 // Define a type for the Book object
-type Book = {
+type Books = {
     title: string;
     author: string;
     image: string;
@@ -20,7 +20,7 @@ export default function AddBookForm () {
     const [author, setAuthor] = useState('');
     const [image, setImage] = useState('');
     const [available, setAvailable] = useState(true)
-    const [books, setBooks] = useState<Book[]>([]); // Local state for books
+    const [books, setBooks] = useState<Books[]>([]); // Local state for books
 
     const router = useRouter()
 
