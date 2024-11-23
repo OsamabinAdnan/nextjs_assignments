@@ -1,7 +1,7 @@
-import { NextResponse } from "next/server";
+
 import { NextRequest } from "next/server";
 import  books  from "@/data";
-import { Books } from "@/data";
+
 
 
 // GET method
@@ -40,7 +40,7 @@ export const PUT = async (request:NextRequest):Promise<Response> => {
         books[index] = {...books[index], ...updatedBook};
         return new Response (JSON.stringify({updatedBook:books[index]}),{status:200})
     }
-    catch (error){
+    catch {
         return new Response(JSON.stringify({message:'Invalid Data'}),{status:400})
     }
 }
@@ -57,7 +57,7 @@ export const DELETE = async (request:NextRequest):Promise<Response> => {
         books.splice(index,1); // Remove book from the array
         return new Response (JSON.stringify({message:'Book deleted successfully'}), {status:200})
     }
-    catch (error){
+    catch {
         return new Response (JSON.stringify({message:'Invalid Data'}), {status:400})
     }
 }
