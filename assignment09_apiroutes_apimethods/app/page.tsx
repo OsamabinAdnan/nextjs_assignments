@@ -6,9 +6,8 @@ import Footer from './components/Footer';
 import { Books } from '@/data';
 
 export default async function Home() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
-  const res = await fetch (`${baseUrl}/api/books`)
-  const books:Books[] = await res.json();
+  const response = await fetch (`http://localhost:3000/api/books`)
+  const books:Books[] = await response.json();
   console.log(books);
   
   return (

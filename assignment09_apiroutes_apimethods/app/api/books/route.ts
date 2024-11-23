@@ -1,5 +1,5 @@
 
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import  books  from "@/data";
 
 
@@ -8,7 +8,7 @@ import  books  from "@/data";
 
 export const GET = async () =>{
     const data = JSON.stringify(books)
-    return new Response(data, {status:200})
+    return new NextResponse(data, {status:200})
 };
 
 // POST method
@@ -18,11 +18,11 @@ export const POST = async (request:NextRequest):Promise<Response> => {
         const newBook = await request.json();
         newBook.id = books.length + 1
         books.push(newBook)
-        return new Response (JSON.stringify ({newBook:newBook}),{
+        return new NextResponse (JSON.stringify ({newBook:newBook}),{
             status:200,
         });
     } catch {
-        return new Response(JSON.stringify ({message: 'Invalid Data'}),{
+        return new NextResponse (JSON.stringify ({message: 'Invalid Data'}),{
             status:400
         })
     }
@@ -35,13 +35,13 @@ export const PUT = async (request:NextRequest):Promise<Response> => {
         const index = books.findIndex((book) =>book.id === updatedBook.id);
 
         if (index == -1){
-            return new Response (JSON.stringify({message:'Book not found'}),{status:404})
+            return new NextResponse (JSON.stringify({message:'Book not found'}),{status:404})
         }
         books[index] = {...books[index], ...updatedBook};
-        return new Response (JSON.stringify({updatedBook:books[index]}),{status:200})
+        return new NextResponse (JSON.stringify({updatedBook:books[index]}),{status:200})
     }
     catch {
-        return new Response(JSON.stringify({message:'Invalid Data'}),{status:400})
+        return new NextResponse(JSON.stringify({message:'Invalid Data'}),{status:400})
     }
 }
 
@@ -52,12 +52,12 @@ export const DELETE = async (request:NextRequest):Promise<Response> => {
         const index = books.findIndex((book)=>book.id === id);
 
         if (index === -1){
-            return new Response (JSON.stringify ({message:'Book not found'}),{status:404});
+            return new NextResponse (JSON.stringify ({message:'Book not found'}),{status:404});
         };
         books.splice(index,1); // Remove book from the array
-        return new Response (JSON.stringify({message:'Book deleted successfully'}), {status:200})
+        return new NextResponse (JSON.stringify({message:'Book deleted successfully'}), {status:200})
     }
     catch {
-        return new Response (JSON.stringify({message:'Invalid Data'}), {status:400})
+        return new NextResponse (JSON.stringify({message:'Invalid Data'}), {status:400})
     }
 }
