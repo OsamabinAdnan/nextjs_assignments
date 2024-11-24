@@ -11,7 +11,7 @@ export default async function Home() {
   const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL?.replace(/\/$/, ""); // Remove trailing slash if present
   
   //using environment variable in order to deploy.
-  const apiUrl = `${baseUrl || 'http://localhost:3000'}/api/books`; // Construct the API URL
+  const apiUrl = `${baseUrl}/api/books`; // Construct the API URL
   console.log(`Fetching from URL: ${apiUrl}`); // Log the URL for debugging
 
     const response = await fetch (apiUrl,{
