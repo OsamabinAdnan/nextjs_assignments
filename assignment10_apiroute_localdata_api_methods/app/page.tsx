@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 export default async function Home() {
   const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
-  //using environment variable in order to deploy.
+  //using environment variable in order to deploy
     const response = await fetch (`${baseUrl || 'http://localhost:3000'}/api/books`,{
       method: 'GET',
       cache:'no-store' // This will ensure fresh data is fetched
