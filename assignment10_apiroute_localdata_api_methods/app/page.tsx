@@ -8,9 +8,9 @@ import Footer from "@/components/Footer";
 
 
 export default async function Home() {
-  
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL
   //using environment variable in order to deploy
-    const response = await fetch (`${process.env.NEXT_PUBLIC_SITE_URL}/api/books`,{
+    const response = await fetch (`${baseUrl}/api/books`,{
       method: 'GET',
       cache:'no-store' // This will ensure fresh data is fetched
     })
