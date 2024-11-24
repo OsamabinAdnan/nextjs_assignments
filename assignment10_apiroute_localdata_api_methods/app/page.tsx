@@ -8,12 +8,20 @@ import Footer from "@/components/Footer";
 
 
 export default async function Home() {
-  const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
+  const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL?.replace(/\/$/, ""); // Remove trailing slash if present
+  
   //using environment variable in order to deploy
-    const response = await fetch (`${baseUrl || 'http://localhost:3000'}/api/books`,{
+  const apiUrl = `${baseUrl || 'http://localhost:3000'}/api/books`; // Construct the API URL
+  console.log(`Fetching from URL: ${apiUrl}`); // Log the URL for debugging
+
+    const response = await fetch (apiUrl,{
       method: 'GET',
       cache:'no-store' // This will ensure fresh data is fetched
-    })
+    }) 
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`); // Handle errors
+    }
+
   const books:Book[] = await response.json();
   console.log(books);
   return (
