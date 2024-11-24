@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 export default async function Home() {
 
-  const response = await fetch (`http://localhost:3000/api/books`,{
+  const response = await fetch (`${process.env.NEXT_PUBLIC_SITE_URL}/api/books`,{
     method: 'GET',
     cache:'no-store' // This will ensure fresh data is fetched
   })
