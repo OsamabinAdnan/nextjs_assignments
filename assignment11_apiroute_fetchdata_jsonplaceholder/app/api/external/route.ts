@@ -12,7 +12,7 @@ export async function GET () {
                 status:response.status,
             })
         }
-        const data = await response.json();
+        const data = await response.json(); //Parsing the data from one variable to other
         return NextResponse.json({success:true,data})
     }
     catch (error:any) {
