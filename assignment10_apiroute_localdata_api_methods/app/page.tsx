@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 export default async function Home() {
   //using environment variable in order to deploy project on vercel
-  const baseURL = process.env.NEXT_PUBLIC_API_URL
+  const baseURL = process.env.NEXT_PUBLIC_API_URL;// Ensure this is defined
   const response = await fetch(`${baseURL}/api/books`,{
     method: 'GET',
     cache:'no-store' // This will ensure fresh data is fetched
