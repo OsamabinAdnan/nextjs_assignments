@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 
 
 export default async function Home() {
-  const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL?.replace(/\/$/, ""); // Remove trailing slash if present
+  const baseUrl = process.env.URL?.replace(/\/$/, ""); // Remove trailing slash if present
   
   //using environment variable in order to deploy
   const apiUrl = `${baseUrl}/api/books`; // Construct the API URL
