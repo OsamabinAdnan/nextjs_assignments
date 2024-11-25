@@ -1,9 +1,10 @@
-
+'use client'
 import { Book } from "@/data";
 import BookCard from "@/components/book-card";
 import BookForm from "@/components/book-form";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
 
 
 export default async function Home() {
