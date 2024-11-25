@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 
 
 export default async function Home() {
-  const baseUrl = process.env.API_URL?.replace(/\/$/, ""); // Remove trailing slash if present
+  const baseUrl = process.env.API_URL
   
   //using environment variable in order to deploy
   const apiUrl = `${baseUrl}/api/books`; // Construct the API URL
