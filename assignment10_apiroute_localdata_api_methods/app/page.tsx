@@ -5,7 +5,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 
-
 export default async function Home() {
   const baseUrl = process.env.NEXT_PUBLIC_API_URL
   
