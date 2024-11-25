@@ -1,4 +1,3 @@
-'use client'
 import { Book } from "@/data";
 import BookCard from "@/components/book-card";
 import BookForm from "@/components/book-form";
