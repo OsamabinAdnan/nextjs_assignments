@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 
 export default async function Home() {
-  const baseUrl = process.env.NEXT_PUBLIC_API_URL
+  const baseUrl = process.env.URL
   
   //using environment variable in order to deploy
   const apiUrl = `${baseUrl}/api/books`; // Construct the API URL
