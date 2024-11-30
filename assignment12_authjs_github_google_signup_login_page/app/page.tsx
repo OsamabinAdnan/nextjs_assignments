@@ -5,9 +5,6 @@ import { SessionWrapper } from "@/components/SessionWrapper";
 import SignInPage from "@/components/login/SignInComponent";
 
 
-
-
-
 export default async function Home() {
     const session = await auth();
     const isAuthenticated = !!session?.user
