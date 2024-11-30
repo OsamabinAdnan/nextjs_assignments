@@ -6,10 +6,6 @@ import { SiGmail } from "react-icons/si";
 import { useEffect, useState } from "react";
 
 export default function SignInPage (){
-    const formVariant = {
-        hidden:{opacity:0, y:50},
-        visible:{opacity:1, y:0},
-    }
     const [isVisible, SetIsVisible] = useState(false);
 
     // Simulate the effect of "visible" on mount
