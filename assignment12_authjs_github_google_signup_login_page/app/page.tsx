@@ -18,7 +18,7 @@ export default async function Home() {
           {isAuthenticated ? (
               // Content for authenticated users
               <div>
-                <h1 className="text-2xl font-bold ml-10 mt-5">Welcome! {session?.user?.name || 'User'}!</h1>
+                <h1 className="text-2xl font-bold ml-10 mt-5 mb-5">Welcome! {session?.user?.name || 'User'}!</h1>
                 {/* Add authenticated user content here */}
                 <p className="text-xl font-semibold ml-10">You are logged in.</p>
               </div>
