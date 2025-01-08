@@ -41,6 +41,7 @@ function Form() {
               message: errors[fieldWithError],
             });
           }
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
         } catch (error) {
           alert("Submitting form failed!");
         }
